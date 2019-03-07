@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My portofolio</title>
+<link rel="stylesheet" href="sanitize.css">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?vJbgzbYQIEs%3D&aa=1&ab=2" charset="utf-8"></script>
+</head>
+
+<body>
+<header>
+  <div class="l-in flex flex-align-center menu">
+    <h1><a href="index.html"><img src="images/ico_logo.png" alt=""></a></h1>
+    <div class="nav__icon"> <span></span> <span></span> <span></span> </div>
+    <nav>
+      <ul class="flex g_nav">
+        <li><a class="works_menu" href="#works_title">Works</a></li>
+        <li><a class="about_menu" href="#about_title">About</a></li>
+        <li><a class="contact_menu" href="#contact_title">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="l-in">
+  <div class="main">
+    <div class="title"><img src="images/ico_title.png" alt=""></div>
+    <div class="slide slide_ber"> <img class="item1" src="file:///C:/img/km.jpg" alt=""> <img class="item2" src="images/pic_main02.jpg" alt=""> <img class="item3" src="images/pic_main03.jpg" alt=""> </div>
+  </div>
+  <div class="down l-bottom"> <img src="images/pic_down.png" alt=""> </div>
+  <section class="works">
+    <h2 id="works_title" class="l-bottom slide-top"data-plugin-options='{"reverse": false}'>Works</h2>
+
+    
+    
+    <h2 id="about_title" class="l-bottom slide-bottom"data-plugin-options='{"reverse": false}'>About</h2>
+    <div class="about_ipad flex flex-align-center flex-wrap-wrap">
+      <div class="about_img"> <img src="file:///C:/img/th.jpg" alt="">
+
+      </div>
+      <div class="profile">
+        <p>名古屋大学<br>
+          Webデザイン学科</p>
+        <span>Ｖ　　ゆうと</span>
+        <p>BMXに乗るのが趣味です。<br>
+        webデザイナーを目指し、ひびべんきょうしています。<br>
+        
+          好きなアーティストは、ポストまろーんです。</p>
+        <div id="content"> <a id="rect" href="about.html">僕について</a> </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact l-bottom">
+    <h2 class="l-bottom" id="contact_title" class="slide-left"data-plugin-options='{"reverse": false}'>
+    Contact
+    </h2>
+    <p class="contact_message">ご意見やご感想などございましたら　　メルアド　　にお気軽にご連絡ください。<br>
+      SNSでもDMを受け付けておりますので、詳しくは<a href="about.html">こちら</a>を御覧ください。</p>
+  </section>
+  <div class="pagetop"> <a href="#"><img src="images/ico_top.gif" alt=""></a> </div>
+
+<script>
+		$(function(){
+		$(".nav__icon").on("click", function() {
+		$(this).toggleClass("active");
+		$("nav").slideToggle();
+			});
+ 
+			$(window).resize(function(){
+				var w = $(window).width();
+				var h = $(window).height();
+				var x = 769;
+				if (w >= x) {
+				$('nav').css({ display: 'block'});
+				}else{
+					if($('nav').css('display') != 'none'){
+						$('nav').css({ display: 'none'});
+						$('.nav__icon').removeClass("active");	
+					}
+				}
+			});
+		});
+				
+	
+			  $('.about_menu').on('click',function(){
+                var abouttop = $('#about_title').offset().top; 
+                $('body,html').animate({
+                    scrollTop:abouttop
+                },'normal');
+            });	
+				
+			　$('.works_menu').on('click',function(){
+                var worktop = $('#works_title').offset().top; 
+                $('body,html').animate({
+                    scrollTop:worktop
+                },'normal');
+            });	
+				
+			  $('.blog_menu').on('click',function(){
+                var blogtop = $('#blog_title').offset().top; 
+                $('body,html').animate({
+                    scrollTop:blogtop
+                },'normal');
+            });
+			
+			  $('.contact_menu').on('click',function(){
+                var contacttop = $('#contact_title').offset().top; 
+                $('body,html').animate({
+                    scrollTop:contacttop
+                },'normal');
+            });	
+
+		var topBtn=$('.pagetop');
+	    topBtn.hide();
+	   
+	  $(window).scroll(function(){
+		if($(this).scrollTop()>500){
+		  topBtn.fadeIn();
+		}else{
+		  topBtn.fadeOut();
+		} 
+	  });
+	   topBtn.click(function(){
+		$('body,html').animate({
+		scrollTop: 0
+		}, 'normal');
+	  });
+				
+				
+				
+				
+			});	
+		
+	</script> 
+<script>$(window).fadeThis();</script>
+</body>
+</html>

@@ -1,0 +1,658 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* BASE
+------------------------------------*/
+body{
+	font-size: 1.125em;
+	font-family: "FOT-筑紫A丸ゴシック Std M";
+	color: #515151;	
+}
+
+a{
+	margin: 0;
+    padding: 0;
+	text-decoration: none;
+	display: inline-block;
+  	transition: .3s;
+}
+
+ul {
+	width: 100%;
+	padding-left:0;
+	list-style:none;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+h1{
+	margin: 0;
+}
+
+h2{
+	font-family: "FOT-パール Std L";
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.5em;
+	padding-bottom: 10px;
+	color:#002033;
+	border-bottom:#002033 3px solid;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+/* LAYOUT
+------------------------------------*/
+
+.l-in {
+	max-width:1020px;
+	margin:0 auto;
+}
+
+.l-center {
+	text-align:center;
+}
+
+.l-bottom{
+	margin-bottom: 100px;
+}
+
+.flex {
+	display:flex;
+	justify-content:space-between;
+}
+
+.flex-align-center {
+	align-items:center;
+}
+
+.flex-wrap-wrap{
+	flex-wrap:wrap;
+}
+
+/* MODULE
+------------------------------------*/
+
+/* [header] */
+
+header{
+	background-color: #515151;
+}
+
+nav{
+	font-family:"FOT-筑紫B丸ゴシック Std R";
+	margin-left: 100px;
+	width: 100%;
+}
+
+.g_nav li{
+	font-size: 1em;
+}
+
+.g_nav a{
+	transition: 0.5s;
+	color: #fff; 
+}
+.g_nav :hover{
+	transform: rotate(5deg);
+	color: #b2011f; 
+}
+
+/* [main photo] */
+
+.main{
+	position: relative;
+}
+
+.title{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+	position: absolute;
+	
+}
+.slide{
+	margin-bottom: 50px;
+	height:550px;
+	position: relative;
+}
+.slide img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*.slide_ber::before{
+	z-index: 1;
+	content: "";
+	width: 100%;
+	height: 280px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	opacity: 0.6;
+	bottom:150px;
+	left: 0;
+	transform: skewY(-7deg);
+}
+
+.slide_ber::after{
+	z-index: 2;
+	content: "";
+	width: 100%;
+	height: 280px;
+	background: #000;
+	display: block;
+	position: absolute;
+	opacity: 0.4;
+	bottom:150px;
+	left: 0px;
+	transform: skewY(7deg);
+}*/
+
+.down{
+	text-align: center;
+}
+
+/* [about] */
+
+.about img{
+	height: auto;
+	width: 100%;
+}
+.about_name{
+	font-size: 12px;
+	text-align: center;
+}
+
+.about span{
+	color: #002033;
+	font-size: 2em;
+}
+
+.profile{
+	text-align: center;
+	width: 50%;
+}
+
+.profile a{
+	font-size: 14px;
+	color: #002033;
+	border: 2px solid #002033;
+	padding: 8px 0;
+	width: 130px;
+	margin: 0 auto;
+	display: block;
+	transition: 0.5s;
+}
+
+.profile a:hover{
+	transform: rotate(5deg);
+	color: #fff;
+	background-color: #002033;
+	border: 2px solid #002033;
+}
+
+/*----------- about_single------------- */
+
+.about_single h2{
+	margin-top: 100px;
+}
+.about_single img{
+	width: 50%;
+}
+.about_single{
+	text-align: center;
+}
+
+.mail{
+	margin: 0 auto;
+	width: 30%;
+}
+
+.about .name{
+	margin: 0 auto;
+	display: block;
+	width: 30%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.message{
+	line-height: 2.5;
+	margin-bottom: 50px;
+	background-image:url(../images/ico_sakura.png), url(../images/ico_sakura.png);
+	background-position: top left, bottom right;
+	background-repeat: no-repeat, no-repeat;
+}
+
+.back{
+	width: 7%;
+	position:fixed;
+	right: 2%;
+	bottom: 2%;
+}
+
+/* [sns] */
+
+.sns{
+	width: 70%;
+	margin: 50px auto;
+}
+
+.sns a{
+	display: block;
+	margin: 0 auto;
+	width: 70px;
+}
+
+/*--------------------------------------*/
+
+/* [works] */
+.work{
+	width: 50%;
+}
+
+.work_all{
+	flex-wrap:wrap;
+}
+
+.work,h3,p{
+	text-align: center;
+}
+.work p{
+	font-size: 16px;
+}
+.work a{
+	font-size: 14px;
+	color: #002033;
+	border: 2px solid #002033;
+	padding: 8px 0;
+	width: 120px;
+	margin: 0 auto;
+	display: block;
+	transition: 0.5s;
+}
+.work a:hover{
+	transform: rotate(5deg);
+	color: #fff;
+	background-color: #002033;
+	border:2px solid #002033;
+}
+.work img{
+	max-width: 50%;
+}
+
+.work_message{
+	line-height: 2;
+	padding: 50px 15px;
+	border: 1px solid #002033;
+	
+}
+
+.pdf{
+	margin-bottom: 50px;
+}
+
+.pdf a{
+	text-decoration: underline;
+}
+
+/* [blog] */
+
+.blog{
+	text-align: center;
+}
+
+.blog a{
+	color: #73c482;
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.blog h2{
+	margin-bottom: 50px;
+}
+
+/* [contact] */
+
+.contact_message a{
+	text-decoration: underline;
+}
+
+/* [footer] */
+
+.pagetop{
+	width: 7%;
+	position:fixed;
+	right: 2%;
+	bottom: 2%;
+}
+
+footer{
+	padding: 25px 0;
+	background-color: #515151;
+}
+
+small{
+	text-align: center;
+	display: block;
+	color: #fff;
+}
+
+/*----------- work_single------------- */
+.work_single h2{
+	margin-top: 100px;
+}
+.work_single img{
+	margin-bottom: 50px;
+}
+.work_single{
+	text-align: center;
+}
+.work_message{
+	margin: 0 auto 50px;
+}
+.w_30 img{
+	width: 30%;
+}
+.w_100 img{
+	width: 100%;
+}
+
+.str{
+	background-color:#fec3ff;
+}
+
+.www{
+	margin-bottom: 50px;
+}
+
+/*--------------------------------------*/
+
+@media screen and (max-width:800px) {
+
+.slide{
+	height:384px;
+}
+.about_ipad{
+	justify-content: center
+}	
+
+.mail{
+	width: 40%
+}
+	
+}
+
+/* スマホ用のCSS(最大値) */
+@media screen and (max-width:500px) {
+	
+ul{
+    /*background-color: rgba(0, 0, 0, 0.2);
+    flex-direction: column;*/
+  }
+	
+h1{
+	margin: 0 0 0 5px;
+	width: 45%;	
+}	
+	
+h2{
+	font-size: 1.75em;
+	width: 70%;
+	border-bottom:#515151 2px solid;
+}
+
+h3{
+	font-size:1.25em; 
+}	
+	
+	
+.l-bottom{
+	margin-bottom: 50px;
+}	
+	
+.menu{
+	position: relative;
+}	
+
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title img{
+	width: 50%;
+}	
+	
+.slide{
+	height:188px;
+}	
+	
+/*.slide_ber::before{
+	z-index: 1;
+	content: "";
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	opacity: 0.6;
+	top:18%;
+	left:0;
+	transform: skewY(-7deg);
+}
+
+.slide_ber::after{
+	z-index: 2;
+	content: "";
+	width: 100%;
+	height: 120px;
+	background: #000;
+	display: block;
+	position: absolute;
+	opacity: 0.4;
+	top:18%;
+	left:0;
+	transform: skewY(7deg);
+}*/
+
+.down img{
+	width: 20%;
+}	
+	
+.about{
+	width: 100%;
+	height: auto;
+}	
+.about img{
+	width: 50%;
+}
+.about_img{
+	text-align: center;
+	width: 100%;
+}
+	
+.about_name{
+	font-size: 10px;
+}	
+	
+.profile{
+	font-size: 0.8em;
+	width: 90%;
+	margin: 0 auto;
+}
+.work{
+	text-align: center;
+	width: 100%;
+}
+.work img{
+	width: 70%;
+}
+
+.work p{
+	font-size: 16px;
+}
+	
+/* [contact] */
+
+.contact_message{
+	width: 90%;
+	font-size: 14px;
+	margin: 0 auto;
+}
+	
+	
+.pagetop{
+	width: 15%;
+}	
+	
+footer{
+	padding: 10px 0;
+}
+	
+/*----------- about_single------------- */
+.about_single h2{
+	margin-top: 50px;
+}
+
+.about .name{
+	width:50%;
+}
+
+.mail{
+	width: 50%;
+}
+.mail img{
+	margin-right: 10px;
+	width: 10%;
+}
+	
+.mail,.about_single p{
+	font-size: 12px;
+}
+.message{
+	margin: 0 auto;
+	width: 70%;	
+}
+.sns{
+	margin: 25px auto;
+}	
+
+.sns a{
+	width: 15%;
+}	
+	
+.back{
+	width: 15%;
+}	
+/*--------------------------------------*/	
+
+/*----------- work_single------------- */
+.work_single h2{
+	margin-top: 50px;
+}
+	
+.w_30 img{
+	width: 70%;
+	margin:0 auto 30px;
+}
+
+.work_message{
+	padding: 30px 
+	font-size:14px; 
+	width: 90%;
+}
+	
+.video{
+  position:relative;
+  width:100%;
+  padding-top:56.25%;
+}
+.video iframe{
+  position:absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height:100%;
+}
+}
+/*--------------------------------------*/
+
+
+	
+	
+@media only screen and (max-width: 769px) {
+	/* ハンバーガーメニューCSS */	
+.nav__icon {
+	right: 2%;
+    width: 36px;
+    height: 28px;
+    position:absolute;
+    cursor: pointer;
+}
+ 
+.nav__icon span {
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+}
+ 
+.nav__icon span:nth-of-type(1) {
+    top: 0;
+}
+ 
+.nav__icon span:nth-of-type(2) {
+    top: 12px;
+}
+ 
+.nav__icon span:nth-of-type(3) {
+    bottom: 0;
+}
+ 
+.nav__icon.active span:nth-of-type(1) {
+    transform: translateY(12px) rotate(-45deg);
+}
+ 
+.nav__icon.active span:nth-of-type(2) {
+    display: none;
+}
+ 
+.nav__icon.active span:nth-of-type(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+	.nav__icon,
+    .nav__icon span {
+    display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+	z-index: 999;
+    }
+    
+nav{
+	margin: 0;
+	width: 90%;
+	z-index: 999;
+	position: absolute;
+	right: 5%;
+	top: 0;
+	margin-top: 15%;
+	display: none;
+}	
+}
+

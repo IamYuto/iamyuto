@@ -61,14 +61,14 @@ width:960px;
   
 }
 #index{
-background-image: url(file:///C:/img/ok.jpg);
+background-image: url(ok.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #about{
-background-image: url(file:///C:/img/AA.jpg);
+background-image: url(AA.jpg);
   background-position: center top;
 background-size:contain;
 
